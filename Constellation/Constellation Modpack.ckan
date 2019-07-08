@@ -1,0 +1,374 @@
+{
+	"kind": "metapackage",
+	"abstract": "A list of modules installed on the portable KSP instance",
+	"name": "installed-portable",
+	"license": "unknown",
+	"version": "2019.07.07.12.04.33",
+	"identifier": "installed-portable",
+	"spec_version": "v1.6",
+	"recommends": [
+		{
+			"name": "GroundConstruction"
+		},
+		{
+			"name": "KerbalAtomics"
+		},
+		{
+			"name": "KerbalAtomics-NFECompatibility"
+		},
+		{
+			"name": "KerbalAtomics-NTRModSupport"
+		},
+		{
+			"name": "MainSailorTextures-Complete"
+		},
+		{
+			"name": "NearFutureConstruction"
+		},
+		{
+			"name": "NearFutureElectrical"
+		},
+		{
+			"name": "NearFutureElectrical-Core"
+		},
+		{
+			"name": "NearFuturePropulsion"
+		},
+		{
+			"name": "NearFutureSolar"
+		},
+		{
+			"name": "NearFutureSolar-Core"
+		},
+		{
+			"name": "NearFutureSpacecraft"
+		},
+		{
+			"name": "ProceduralFairings"
+		},
+		{
+			"name": "ProceduralParts"
+		},
+		{
+			"name": "ReStock"
+		},
+		{
+			"name": "ReStockPlus"
+		},
+		{
+			"name": "StationPartsExpansionRedux"
+		},
+		{
+			"name": "TexturesUnlimited"
+		},
+		{
+			"name": "CommunityTechTree"
+		},
+		{
+			"name": "ModuleManager"
+		},
+		{
+			"name": "GroundConstruction-Core"
+		},
+		{
+			"name": "AT-Utils"
+		},
+		{
+			"name": "ConfigurableContainers-Core"
+		},
+		{
+			"name": "CommunityResourcePack"
+		},
+		{
+			"name": "B9PartSwitch"
+		},
+		{
+			"name": "CryoTanks"
+		},
+		{
+			"name": "CryoTanks-Core"
+		},
+		{
+			"name": "DynamicBatteryStorage"
+		},
+		{
+			"name": "DeployableEngines"
+		},
+		{
+			"name": "MainSailorTextures-Essentials"
+		},
+		{
+			"name": "NearFutureProps"
+		},
+		{
+			"name": "BetterSRBs"
+		},
+		{
+			"name": "SCANsat"
+		},
+		{
+			"name": "ClickThroughBlocker"
+		},
+		{
+			"name": "CommunityTraitIcons"
+		},
+		{
+			"name": "DatedQuickSaves"
+		},
+		{
+			"name": "DeflatableHeatShield"
+		},
+		{
+			"name": "DistantObject"
+		},
+		{
+			"name": "DistantObject-default"
+		},
+		{
+			"name": "DockingPortAlignmentIndicator"
+		},
+		{
+			"name": "EditorExtensionsRedux"
+		},
+		{
+			"name": "EditorTime"
+		},
+		{
+			"name": "FilterExtensions"
+		},
+		{
+			"name": "CustomBulkheadProfiles"
+		},
+		{
+			"name": "InlineBallutes"
+		},
+		{
+			"name": "KAS"
+		},
+		{
+			"name": "KeepItStraight"
+		},
+		{
+			"name": "KerbalAlarmClock"
+		},
+		{
+			"name": "KerbalImprovedSaveSystem"
+		},
+		{
+			"name": "KerbalInventorySystemNoFun"
+		},
+		{
+			"name": "KIS"
+		},
+		{
+			"name": "KSP-AVC"
+		},
+		{
+			"name": "KSPRescuePodFix"
+		},
+		{
+			"name": "LoadingScreenManager"
+		},
+		{
+			"name": "ManeuverQueue"
+		},
+		{
+			"name": "MissingHistory"
+		},
+		{
+			"name": "OneWindow"
+		},
+		{
+			"name": "PreciseNode"
+		},
+		{
+			"name": "RCSBuildAidCont"
+		},
+		{
+			"name": "SAVE"
+		},
+		{
+			"name": "CAMk3BlockII"
+		},
+		{
+			"name": "ScienceAlert"
+		},
+		{
+			"name": "ScienceLabInfo"
+		},
+		{
+			"name": "ScienceRelay"
+		},
+		{
+			"name": "SDHI-ServiceModuleSystem"
+		},
+		{
+			"name": "ShuttleLiftingBodyCormorantAeronology"
+		},
+		{
+			"name": "StageRecovery"
+		},
+		{
+			"name": "StockalikeMiningExtension"
+		},
+		{
+			"name": "WaypointManager"
+		},
+		{
+			"name": "WorldStabilizer"
+		},
+		{
+			"name": "RasterPropMonitor"
+		},
+		{
+			"name": "RosterManager"
+		},
+		{
+			"name": "FilterExtensionsDefaultConfig"
+		},
+		{
+			"name": "EasyVesselSwitch"
+		},
+		{
+			"name": "TriggerAu-Flags"
+		},
+		{
+			"name": "CommunityCategoryKit"
+		},
+		{
+			"name": "Toolbar"
+		},
+		{
+			"name": "ContractConfigurator"
+		},
+		{
+			"name": "MagiCore"
+		},
+		{
+			"name": "ToolbarController"
+		},
+		{
+			"name": "unBlur"
+		},
+		{
+			"name": "AnimatedDecouplers"
+		},
+		{
+			"name": "RealChute"
+		},
+		{
+			"name": "SDHI-SharedAssets"
+		},
+		{
+			"name": "FirespitterCore"
+		},
+		{
+			"name": "RasterPropMonitor-Core"
+		},
+		{
+			"name": "Konstruction"
+		},
+		{
+			"name": "UKS"
+		},
+		{
+			"name": "USI-LS"
+		},
+		{
+			"name": "USITools"
+		},
+		{
+			"name": "USI-Core"
+		},
+		{
+			"name": "UniversalStorage2"
+		},
+		{
+			"name": "Landertron"
+		},
+		{
+			"name": "DunaRestorationProject"
+		},
+		{
+			"name": "Kopernicus"
+		},
+		{
+			"name": "CustomBarnKit"
+		},
+		{
+			"name": "CustomAsteroids-Pops-OPM-Outer"
+		},
+		{
+			"name": "OuterPlanetsMod"
+		},
+		{
+			"name": "ModularFlightIntegrator"
+		},
+		{
+			"name": "BetterTimeWarpCont"
+		},
+		{
+			"name": "CustomAsteroids"
+		},
+		{
+			"name": "CommunityTerrainTexturePack"
+		},
+		{
+			"name": "AECS-Motion-Suppressor"
+		},
+		{
+			"name": "AGExt"
+		},
+		{
+			"name": "kOS"
+		},
+		{
+			"name": "KerbalEngineerRedux"
+		},
+		{
+			"name": "Olympic1ARPIcons"
+		},
+		{
+			"name": "AlternateResourcePanel"
+		},
+		{
+			"name": "ShipManifest"
+		},
+		{
+			"name": "ConnectedLivingSpace"
+		},
+		{
+			"name": "KVVContinued"
+		},
+		{
+			"name": "Trajectories"
+		},
+		{
+			"name": "MoarFEConfigs"
+		},
+		{
+			"name": "ProceduralFairings-ForEverything"
+		},
+		{
+			"name": "NodeAlert"
+		},
+		{
+			"name": "HeatControl"
+		},
+		{
+			"name": "IndicatorLights"
+		},
+		{
+			"name": "IndicatorLightsCommunityExtensions"
+		},
+		{
+			"name": "TrackingStationEvolved"
+		},
+		{
+			"name": "PartCommanderCont"
+		},
+		{
+			"name": "ZeroMiniAVC"
+		}
+	]
+}
