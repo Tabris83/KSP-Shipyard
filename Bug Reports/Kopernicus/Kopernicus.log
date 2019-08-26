@@ -1,0 +1,93 @@
+//===============================================================================================================//
+//=====  Kopernicus 1.7.3-1 - (BuildDate: 12.07.2019 17:01:53; AssemblyHash: IbYJ4kAham3xZibUdo+N+r7SD10=)  =====//
+//===============================================================================================================//
+[LOG 09:47:33]: Logger "Kopernicus" was created
+[LOG 09:47:33]: Injector.Awake(): Begin
+[LOG 09:47:33]: Parsing Target name in (Kopernicus.Configuration.Loader) as (System.String)
+[LOG 09:47:33]: Parsing Target timeScale in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Double])
+[LOG 09:47:33]: Parsing Target scale in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Double])
+[LOG 09:47:33]: Parsing Target Epoch in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Double])
+[LOG 09:47:33]: Parsing Target useOnDemand in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Boolean])
+[LOG 09:47:33]: Parsing Target useOnDemandBiomes in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Boolean])
+[LOG 09:47:33]: Parsing Target onDemandLoadOnMissing in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Boolean])
+[LOG 09:47:33]: Parsing Target onDemandLogOnMissing in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Boolean])
+[LOG 09:47:33]: Parsing Target onDemandUnloadDelay in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Int32])
+[LOG 09:47:33]: Parsing Target useManualMemoryManagement in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Boolean])
+[LOG 09:47:33]: Parsing Target mainMenuBody in (Kopernicus.Configuration.Loader) as (System.String)
+[LOG 09:47:33]: Parsing Target maxViewingDistance in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Double])
+[LOG 09:47:33]: Parsing Target scaledSpaceFaderMult in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Double])
+[LOG 09:47:33]: Parsing Target force3DOrbits in (Kopernicus.Configuration.Loader) as (Kopernicus.ConfigParser.BuiltinTypeParsers.NumericParser`1[System.Boolean])
+[LOG 09:47:33]: Parsing Target self in (Kopernicus.Configuration.Loader) as (System.Collections.Generic.List`1[Kopernicus.ConfigParser.BuiltinTypeParsers.StringCollectionParser])
+[LOG 09:47:33]: [Kopernicus]: Configuration.Loader: Loaded Body: Sun
+[LOG 09:47:34]: [Kopernicus]: Configuration.Loader: Loaded Body: Moho
+[LOG 09:47:35]: [Kopernicus]: Configuration.Loader: Loaded Body: Eve
+[LOG 09:47:36]: [Kopernicus]: Configuration.Loader: Loaded Body: Gilly
+[LOG 09:47:37]: [Kopernicus]: Configuration.Loader: Loaded Body: Kerbin
+[LOG 09:47:38]: [Kopernicus]: Configuration.Loader: Loaded Body: Mun
+[LOG 09:47:38]: [Kopernicus]: Configuration.Loader: Loaded Body: Minmus
+[LOG 09:47:39]: [Kopernicus]: Configuration.Loader: Loaded Body: Duna
+[LOG 09:47:40]: [Kopernicus]: Configuration.Loader: Loaded Body: Ike
+[LOG 09:47:41]: [Kopernicus]: Configuration.Loader: Loaded Body: Dres
+[LOG 09:47:42]: [Kopernicus]: Configuration.Loader: Loaded Body: Jool
+[LOG 09:47:43]: [Kopernicus]: Configuration.Loader: Loaded Body: Laythe
+[LOG 09:47:44]: [Kopernicus]: Configuration.Loader: Loaded Body: Vall
+[LOG 09:47:44]: [Kopernicus]: Configuration.Loader: Loaded Body: Tylo
+[LOG 09:47:45]: [Kopernicus]: Configuration.Loader: Loaded Body: Bop
+[LOG 09:47:46]: [Kopernicus]: Configuration.Loader: Loaded Body: Pol
+[LOG 09:47:48]: [Kopernicus]: Configuration.Loader: Loaded Body: Eeloo
+[LOG 09:47:50]: [Kopernicus]: Configuration.Loader: Loaded Body: Nissee
+[LOG 09:47:53]: [Kopernicus]: Configuration.Loader: Loaded Body: Thatmo
+[LOG 09:47:56]: [Kopernicus]: Configuration.Loader: Loaded Body: Neidon
+[LOG 09:47:59]: [Kopernicus]: Configuration.Loader: Loaded Body: Plock
+[LOG 09:48:01]: [Kopernicus]: Configuration.Loader: Loaded Body: Sarnus
+[LOG 09:48:03]: [Kopernicus]: Configuration.Loader: Loaded Body: Urlum
+[LOG 09:48:07]: [Kopernicus]: Configuration.Loader: Loaded Body: Karen
+[LOG 09:48:09]: [Kopernicus]: Configuration.Loader: Loaded Body: Hale
+[LOG 09:48:12]: [Kopernicus]: Configuration.Loader: Loaded Body: Ovok
+[LOG 09:48:16]: [Kopernicus]: Configuration.Loader: Loaded Body: Slate
+[LOG 09:48:20]: [Kopernicus]: Configuration.Loader: Loaded Body: Tekto
+[LOG 09:48:23]: [Kopernicus]: Configuration.Loader: Loaded Body: Polta
+[LOG 09:48:26]: [Kopernicus]: Configuration.Loader: Loaded Body: Priax
+[LOG 09:48:29]: [Kopernicus]: Configuration.Loader: Loaded Body: Tal
+[LOG 09:48:33]: [Kopernicus]: Configuration.Loader: Loaded Body: Wal
+[LOG 09:48:33]: [Kopernicus]: Configuration.Loader: Loaded Asteroid: Stock
+[LOG 09:48:33]: [Kopernicus]: Configuration.Loader: Loaded Asteroid: OPMSarnus
+[LOG 09:48:33]: [Kopernicus]: Configuration.Loader: Loaded Asteroid: OPMUrlum
+[LOG 09:48:33]: [Kopernicus]: Configuration.Loader: Loaded Asteroid: OPMNeidon
+[LOG 09:48:33]: Injector.Awake(): Completed in: 60596.9998 ms
+[LOG 09:48:38]: StarLightSwitcher.Start() => Sun
+[LOG 09:48:39]: Found Body: Sun:0 -> SOI = Infinity, Hill Sphere = Infinity
+[LOG 09:48:39]: Found Body: Kerbin:1 -> SOI = 210398216.199076, Hill Sphere = 491036769.446201
+[LOG 09:48:39]: Found Body: Mun:2 -> SOI = 6073897.79141186, Hill Sphere = 7926408.34392789
+[LOG 09:48:39]: Found Body: Minmus:3 -> SOI = 5618570.96975575, Hill Sphere = 9325981.22663582
+[LOG 09:48:39]: Found Body: Moho:4 -> SOI = 24116657.5583203, Hill Sphere = 55150787.0388665
+[LOG 09:48:39]: Found Body: Eve:5 -> SOI = 212773411.84561, Hill Sphere = 464873737.414931
+[LOG 09:48:39]: Found Body: Duna:6 -> SOI = 119804873.424345, Hill Sphere = 312659341.870841
+[LOG 09:48:39]: Found Body: Ike:7 -> SOI = 2623997.34827905, Hill Sphere = 3064946.45858289
+[LOG 09:48:39]: Found Body: Jool:8 -> SOI = 6139962963.55867, Hill Sphere = 10164561563.359
+[LOG 09:48:39]: Found Body: Laythe:9 -> SOI = 9309114.52783255, Hill Sphere = 12965796.6539874
+[LOG 09:48:39]: Found Body: Vall:10 -> SOI = 6016003.6119851, Hill Sphere = 9733003.88156089
+[LOG 09:48:39]: Found Body: Bop:11 -> SOI = 3052652.15710632, Hill Sphere = 5074186.10528439
+[LOG 09:48:39]: Found Body: Tylo:12 -> SOI = 27141295.9208966, Hill Sphere = 36894694.066796
+[LOG 09:48:39]: Found Body: Gilly:13 -> SOI = 315308.179261419, Hill Sphere = 356068.558697188
+[LOG 09:48:39]: Found Body: Pol:14 -> SOI = 2605347.23075445, Hill Sphere = 5097363.68575912
+[LOG 09:48:39]: Found Body: Dres:15 -> SOI = 82082098.9419405, Hill Sphere = 230149283.751491
+[LOG 09:48:39]: Found Body: Eeloo:16 -> SOI = 2897665.3920128, Hill Sphere = 4606940.72780481
+[LOG 09:48:39]: Found Body: Sarnus:17 -> SOI = 6850316770.39382, Hill Sphere = 12270472985.0647
+[LOG 09:48:39]: Found Body: Hale:18 -> SOI = 102500, Hill Sphere = 56285.4786707894
+[LOG 09:48:39]: Found Body: Ovok:19 -> SOI = 235000, Hill Sphere = 164026.642869449
+[LOG 09:48:39]: Found Body: Slate:20 -> SOI = 23995396.6150296, Hill Sphere = 29529592.8045051
+[LOG 09:48:39]: Found Body: Tekto:21 -> SOI = 21592512.9886115, Hill Sphere = 31426947.0515479
+[LOG 09:48:39]: Found Body: Urlum:22 -> SOI = 6405651682.69392, Hill Sphere = 13160157060.8673
+[LOG 09:48:39]: Found Body: Polta:23 -> SOI = 4152787.13263017, Hill Sphere = 5743251.13847945
+[LOG 09:48:39]: Found Body: Priax:24 -> SOI = 1116919.00494654, Hill Sphere = 1922617.16840996
+[LOG 09:48:39]: Found Body: Wal:25 -> SOI = 47333761.7119412, Hill Sphere = 57165662.0835947
+[LOG 09:48:39]: Found Body: Tal:26 -> SOI = 349916.628149532, Hill Sphere = 586679.708109755
+[LOG 09:48:39]: Found Body: Neidon:27 -> SOI = 11039309576.2277, Hill Sphere = 23185466617.1221
+[LOG 09:48:39]: Found Body: Thatmo:28 -> SOI = 14273447.7213297, Hill Sphere = 19044944.6397184
+[LOG 09:48:39]: Found Body: Nissee:29 -> SOI = 18416191.5881378, Hill Sphere = 10371616.9845771
+[LOG 09:48:39]: Found Body: Plock:30 -> SOI = 1531905839.79677, Hill Sphere = 3505528097.89543
+[LOG 09:48:39]: Found Body: Karen:31 -> SOI = 2348385.8106938, Hill Sphere = 2756696.56099673
+[LOG 09:48:39]: Injector.OnDestroy(): Complete
+[LOG 09:48:49]: [Kopernicus] RuntimeUtility Started
+[LOG 09:48:49]: StarLightSwitcher.Awake(): Begin
