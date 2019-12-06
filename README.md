@@ -1,6 +1,6 @@
-Welcome to Tabris' Shipyard
+Welcome to Twitching Astronaut's Shipyard
 
-there will be eventually several categories
+There will be eventually several categories
 
 1. Constellation Related
     1. Lifters
