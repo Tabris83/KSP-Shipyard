@@ -1,4 +1,5 @@
 let theWheel, channelName, spinCommand, fieldData, cooldown, spins, segments = [];
+let subName, winningSegment = [];
 
 let checkPrivileges = (data) => {
     let required = fieldData.privileges;
@@ -20,7 +21,7 @@ let checkPrivileges = (data) => {
 
 window.addEventListener('onEventReceived', function (obj) {
     const skippable = ["bot:counter", "event:test", "event:skip"]; //Array of events coming to widget that are not queued so they can come even queue is on hold
-    if (skippable.indexOf(obj.detail.listener) !== -1) return;
+  	if (skippable.indexOf(obj.detail.listener) !== -1) return;
     if (obj.detail.listener === "message") {
         let data = obj.detail.event.data;
         if (data["text"].toLowerCase() !== spinCommand.toLowerCase()) return;
@@ -33,6 +34,10 @@ window.addEventListener('onEventReceived', function (obj) {
             function () {
                 wheelSpinning = false; // set wheel not spinning, you can add callback to SE API here, to add points to `user`
                 var winningSegment = theWheel.getIndicatedSegment(); //- use this as reference
+              	var subName = obj["detail"]["event"];
+              	//document.getElementById('log').innerText = subName["name"] + " " + winningSegment.text;
+              	$("#log").html(subName["name"] + " " + winningSegment.text);
+              	sendHttpPost();
             }, cooldown * 1000 + 100);
     } else if (obj.detail.listener === fieldData.listener) {
         const data=obj.detail.event;
@@ -61,7 +66,11 @@ window.addEventListener('onEventReceived', function (obj) {
         setTimeout(
             function () {
                 wheelSpinning = false; // set wheel not spinning, you can add callback to SE API here, to add points to `user`
-                //var winningSegment = theWheel.getIndicatedSegment(); //- use this as reference
+                var winningSegment = theWheel.getIndicatedSegment(); //- use this as reference
+              	var subName = obj["detail"]["event"];
+              	//document.getElementById('log').innerText = subName["name"] + " " + winningSegment.text;
+              	$("#log").html(subName["name"] + " " + winningSegment.text);
+              	sendHttpPost();
             }, cooldown * 1000 + 100);
 
     } else {
@@ -87,9 +96,9 @@ window.addEventListener('onWidgetLoad', function (obj) {
             'outerRadius': fieldData['wheelSize'] / 2,        // Set outer radius so wheel fits inside the background.
             'innerRadius': fieldData['innerRadius'],         // Make wheel hollow so segments don't go all way to center.
             'textFontSize': fieldData['textSize'],         // Set default font size for the segments.
-            'textOrientation': 'horizontal',// Make text vertial so goes down from the outside of wheel.
-          	'textDirection'   : 'reversed',
-            'textAlignment': 'outer',    // Align text to outside of wheel.
+            'textOrientation': 'horizontal', // Make text vertial so goes down from the outside of wheel.
+            'textDirection'   : 'reversed',
+          	'textAlignment': 'outer',    // Align text to outside of wheel.
             'numSegments': segments.length,         // Specify number of segments.
             'segments': segments,          // Define segments including colour and text.
           	'pointerAngle' : 270,
@@ -101,15 +110,15 @@ window.addEventListener('onWidgetLoad', function (obj) {
                 {
                     'type': 'spinToStop',
                     'duration': cooldown,     // Duration in seconds.
-                    'spins': spins,     // Default number of complete spins.
-                    'callbackFinished' : 'winAnimation()'
+                    'spins': spins     // Default number of complete spins.
+                    //'callbackFinished' : 'spinEnd()'
                 },
-          'pointerGuide' :        // Turn pointer guide on.
-        	{
-            'display'     : true,
-            'strokeStyle' : 'black',
-            'lineWidth'   : 5
-        	}
+        	'pointerGuide' :        // Turn pointer guide on.
+        		{
+            		'display'     : true,
+            		'strokeStyle' : 'BLACK',
+            		'lineWidth'   : 5
+        		}
         });
     } else {
         theWheel = new Winwheel({
@@ -117,8 +126,8 @@ window.addEventListener('onWidgetLoad', function (obj) {
             'innerRadius': fieldData['innerRadius'],         // Make wheel hollow so segments don't go all way to center.
             'textFontSize': fieldData['textSize'],         // Set default font size for the segments.
             'textOrientation': 'horizontal', // Make text vertial so goes down from the outside of wheel.
-          	'textDirection'   : 'reversed',
-            'textAlignment': 'outer',    // Align text to outside of wheel.
+            'textDirection'   : 'reversed',
+          	'textAlignment': 'outer',    // Align text to outside of wheel.
             'numSegments': segments.length,         // Specify number of segments.
             'segments': segments,          // Define segments including colour and text.
           	'pointerAngle' : 270,
@@ -130,15 +139,15 @@ window.addEventListener('onWidgetLoad', function (obj) {
                 {
                     'type': 'spinToStop',
                     'duration': cooldown,     // Duration in seconds.
-                    'spins': spins,     // Default number of complete spins.
-                    'callbackFinished' : 'winAnimation()'
+                    'spins': spins     // Default number of complete spins.
+                    //'callbackFinished' : 'spinEnd()'
                 },
-          'pointerGuide' :        // Turn pointer guide on.
-        	{
-            'display'     : true,
-            'strokeStyle' : 'black',
-            'lineWidth'   : 5
-        	}
+        	'pointerGuide' :        // Turn pointer guide on.
+        		{
+            		'display'     : true,
+            		'strokeStyle' : 'BLACK',
+            		'lineWidth'   : 5
+        		}
         });
     }
     let loadedImg = new Image();
@@ -160,17 +169,22 @@ function startSpin() {
         theWheel.startAnimation();
         wheelSpinning = true;
     }
+}
+function sendHttpPost() {
 
+  // Copy the entire URL from <form action>
+  var formAction = "https://docs.google.com/spreadsheet/formResponse?formkey=1Dw_De4IUFMGqvPFI4fahguIJI23ifB4fFv_0QXXzV5U&amp;ifq";
+  //https://docs.google.com/forms/d/e/1FAIpQLSdyYY1db2xPuK3kkvoxXHUy4KmHlwLan7zreAPk7azpXW6ttQ/viewform?usp=pp_url&entry.1183085274=Test+User&entry.591611545=5000&submit=Submit
+	//subName["name"] + " " + winningSegment.text
+  var payload = {
+    "entry.0.single": "test",            // Subscriber Name
+    "entry.1.single": winningSegment.text		  // Prize Won
+  };
+  var fullURL = "https://docs.google.com/forms/d/e/1FAIpQLSdyYY1db2xPuK3kkvoxXHUy4KmHlwLan7zreAPk7azpXW6ttQ/formResponse?usp=pp_url&entry.1183085274="+"test"+"&entry.591611545="+winningSegment.text+"&submit=Submit";
+  var options = {
+    "method": "post"
+  };
 
-    // This function called after the spin animation has stopped.
-function winAnimation()
-    {
-        // Get the number of the winning segment.
-        let winningSegmentNumber = theWheel.getIndicatedSegmentNumber();
- 		    console.log('winningSegmentNumber');
-    }
- 
-    
-}    
-    
-
+  UrlFetchApp.fetch(fullURL, options);
+  
+}
