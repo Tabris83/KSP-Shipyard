@@ -35,9 +35,11 @@ window.addEventListener('onEventReceived', function (obj) {
                 wheelSpinning = false; // set wheel not spinning, you can add callback to SE API here, to add points to `user`
                 var winningSegment = theWheel.getIndicatedSegment(); //- use this as reference
               	var subName = obj["detail"]["event"];
+              	var subName2 = subName["name"];
               	//document.getElementById('log').innerText = subName["name"] + " " + winningSegment.text;
               	$("#log").html(subName["name"] + " " + winningSegment.text);
-              	sendHttpPost();
+              	$.ajax({url: "https://docs.google.com/forms/d/e/[GOOGLE SHEETS FORM ID HERE]/formResponse?usp=pp_url&entry.1183085274="+subName2+"&entry.591611545="+winningSegment.text+"&submit=Submit", type: "POST"});
+              	//sendHttpPost();
             }, cooldown * 1000 + 100);
     } else if (obj.detail.listener === fieldData.listener) {
         const data=obj.detail.event;
@@ -68,9 +70,11 @@ window.addEventListener('onEventReceived', function (obj) {
                 wheelSpinning = false; // set wheel not spinning, you can add callback to SE API here, to add points to `user`
                 var winningSegment = theWheel.getIndicatedSegment(); //- use this as reference
               	var subName = obj["detail"]["event"];
+              	var subName2 = subName["name"];
               	//document.getElementById('log').innerText = subName["name"] + " " + winningSegment.text;
               	$("#log").html(subName["name"] + " " + winningSegment.text);
-              	sendHttpPost();
+              	$.ajax({url: "https://docs.google.com/forms/d/e/[GOOGLE SHEETS FORM ID HERE]/formResponse?usp=pp_url&entry.1183085274="+subName2+"&entry.591611545="+winningSegment.text+"&submit=Submit", type: "POST"});
+              	//sendHttpPost();
             }, cooldown * 1000 + 100);
 
     } else {
@@ -170,21 +174,4 @@ function startSpin() {
         wheelSpinning = true;
     }
 }
-function sendHttpPost() {
 
-  // Copy the entire URL from <form action>
-  var formAction = "https://docs.google.com/spreadsheet/formResponse?formkey=1Dw_De4IUFMGqvPFI4fahguIJI23ifB4fFv_0QXXzV5U&amp;ifq";
-  //https://docs.google.com/forms/d/e/1FAIpQLSdyYY1db2xPuK3kkvoxXHUy4KmHlwLan7zreAPk7azpXW6ttQ/viewform?usp=pp_url&entry.1183085274=Test+User&entry.591611545=5000&submit=Submit
-	//subName["name"] + " " + winningSegment.text
-  var payload = {
-    "entry.0.single": "test",            // Subscriber Name
-    "entry.1.single": winningSegment.text		  // Prize Won
-  };
-  var fullURL = "https://docs.google.com/forms/d/e/1FAIpQLSdyYY1db2xPuK3kkvoxXHUy4KmHlwLan7zreAPk7azpXW6ttQ/formResponse?usp=pp_url&entry.1183085274="+"test"+"&entry.591611545="+winningSegment.text+"&submit=Submit";
-  var options = {
-    "method": "post"
-  };
-
-  UrlFetchApp.fetch(fullURL, options);
-  
-}
